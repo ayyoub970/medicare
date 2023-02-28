@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Formulaire de soumission</title>
+  <style>
+    /* Ajout de styles pour la mise en forme de la page */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    /* Styles pour la forme elle-même */
+    form {
+      margin: 50px auto;
+      width: 400px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      box-shadow: 2px 2px 5px #ccc;
+    }
+    /* Styles pour les étiquettes */
+    label {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+    /* Styles pour les champs de saisie */
+    input[type="text"] {
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+    }
+    /* Style pour le bouton de soumission */
+    input[type="submit"] {
+      background-color: #4CAF50;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <form method="post" action="submit.php">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+    <label for="lastname">Last Name:</label>
+    <input type="text" id="lastname" name="lastname"><br><br>
+    <input type="submit" name="submit" value="Submit">
+  </form>
+</body>
+</html>

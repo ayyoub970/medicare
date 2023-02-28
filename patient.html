@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Données du patient</title>
+</head>
+<body>
+    <h1>Données du patient</h1>
+    <p>Nom: <span id="patientName"></span></p>
+    <p>Genre: <span id="patientGender"></span></p>
+    <p>Date de naissance: <span id="patientBirthDate"></span></p>
+
+    <script>
+        // Récupérer les données du patient à partir de la chaîne de requête de l'URL
+        var urlParams = new URLSearchParams(window.location.search);
+        var patientName = urlParams.get("name");
+        var patientGender = urlParams.get("gender");
+        var patientBirthDate = urlParams.get("birthdate");
+
+        // Afficher les données du patient dans la page
+        document.getElementById("patientName").innerText = patientName;
+        document.getElementById("patientGender").innerText = patientGender;
+        document.getElementById("patientBirthDate").innerText = patientBirthDate;
+    </script>
+</body>
+</html>
